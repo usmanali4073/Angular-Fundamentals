@@ -22,6 +22,7 @@ import { appRoutes } from './routes'
 import { Error404Component } from './errors/404.component'
 import { AuthService } from './user/auth.service'
 import { ModalTriggerDirective } from './common/modalTrigger.directive';
+import { UpvoteComponent } from './events/event-details/upvote.component';
 
 let toastr:Toastr = window['toastr'];
 let jQuery = window['$'];
@@ -46,7 +47,8 @@ let jQuery = window['$'];
     CollapsibleWellComponent,
     SimpleModalComponent,
     ModalTriggerDirective,
-    DurationPipe
+    DurationPipe,
+    UpvoteComponent
   ],
   providers: [
     EventService, 
